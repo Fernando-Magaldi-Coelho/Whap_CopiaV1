@@ -1,0 +1,9 @@
+@import 'var.css';
+@import 'components/body.css';
+@import 'components/footer.css';
+@import 'components/header.css';
+@import '/whap/css/components/navbar.css';
+@import 'components/style.css';
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');

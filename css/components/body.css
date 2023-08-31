@@ -1,0 +1,127 @@
+.container-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.main .title-2{
+    position: relative;
+    margin-top: 100px;
+    color: #242C3C;
+    font-size: 50px;
+    flex: 1;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.main .hero-subtitle-2{
+    font-size: 50px;
+    line-height: 1.2;
+    margin-left: 50px;
+}
+
+.blue-2{
+    color: var(--azul2);
+}
+
+.Cards img{
+    border: solid 3px var(--azul);
+    height: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-color: var(--azul);
+    transition: background-color 0.5s;
+    color: var(--azul);
+    margin: 100px;
+    object-fit: cover;
+}
+
+.Cards .container .i2{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+}
+
+.Cards .container:hover .i2{
+    opacity: 1;
+}
+
+.Cards .container:hover img{
+    border: solid 3px var(--azul);
+    background-color: white;
+    transition: background-color 0.1s linear;   
+}
+
+
+.Cards{
+    display: flex;
+    justify-content: center;
+    object-fit: cover;    
+}
+
+.Cards img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.Cards p{
+    text-align: center;
+    object-fit: cover;
+}
+
+.Cards h2{
+    text-align: center;
+    object-fit: cover;
+}
+
+.Cards .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    border-radius: 15px;
+    display: flex;
+    object-fit: cover;
+}
+
+
+/* @media only screen and (max-width: 1801px) {
+    .cards-container {
+        flex-wrap: wrap; 
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card .content {
+        padding: 10px; 
+    }
+
+    .Cards{
+        flex-direction: column;
+    }
+
+
+} */

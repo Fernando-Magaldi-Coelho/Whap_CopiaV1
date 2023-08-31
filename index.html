@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/extends.css">
+    <link rel="icon" type="image/x-icon" href="assents/img/favicon.png">
+
+       
+    <title>Whap Soluções Web – Soluções Web</title>
+</head>
+<body>
+
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+    outline: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);;
+    z-index: 10;
+}
+
+
+.navbar_links {
+    display: flex;
+}
+
+.navbar_links li{
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+nav .WhapImg{
+    transition: 0.2s linear;
+    width: 250px;
+    height: 50px;
+    padding: 0 20px;
+    margin-left: 50px;
+}
+
+nav .WhapImg:hover
+    {
+        transform: scale(0.9);
+        transition: transform 0.2s;
+        cursor: pointer;
+    }
+
+nav a{
+    font-size: 20px;
+    margin-right: 10px;
+    color: var(--preto2);
+}
+
+nav a:hover{
+    color: var(--azul);
+}
+
+.fundo{
+    width: 100%;
+    object-fit: cover;
+    margin-top: 5px;
+    height: 100rem;
+    z-index: -1;
+    position: absolute;
+}
+
+.header .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    object-fit: cover;
+    /* background: url(/whap/assents/img/Fundo.png); */
+    background-position: 100%;
+    text-align: center;   
+}
+
+.container h1{
+    font-size: 100px;
+    color: var(--preto);
+}
+
+
+
+
+
+.header p{
+    font-size: 20px;
+}
+
+
+.blue{
+    color:var(--azul);
+}
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.btn-C a{
+    display: flex;
+    background-color: var(--azul3);
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    border: solid 2px var(--azul3);
+    transition: background-color 0.2s linear;
+    cursor: pointer;
+}
+
+.btn-C:hover a{
+    background-color: white;
+    color: var(--azul3);
+    transition: 0.3s;
+}
+
+
+.container-s{
+    display: flex;
+    justify-content: center;
+    object-fit: cover;
+    width: 1200px;
+    align-items: center;
+    height: 1200px;
+    position: relative;
+    transform: translate(-50%);
+    left: 50%;
+}
+
+.container-s img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    position: absolute;
+}
+
+.container-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.main .title-2{
+    position: relative;
+    margin-top: 100px;
+    color: #242C3C;
+    font-size: 50px;
+    flex: 1;
+    white-space: nowrap;
+    z-index: 1;
+}
+
+.main .hero-subtitle-2{
+    font-size: 50px;
+    line-height: 1.2;
+    margin-left: 50px;
+}
+
+.blue-2{
+    color: var(--azul2);
+}
+
+.Cards img{
+    border: solid 3px var(--azul);
+    height: 100px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    background-color: var(--azul);
+    transition: background-color 0.5s;
+    color: var(--azul);
+    margin: 100px;
+    object-fit: cover;
+}
+
+.Cards .container .i2{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+}
+
+.Cards .container:hover .i2{
+    opacity: 1;
+}
+
+.Cards .container:hover img{
+    border: solid 3px var(--azul);
+    background-color: white;
+    transition: background-color 0.1s linear;   
+}
+
+
+.Cards{
+    display: flex;
+    justify-content: center;
+    object-fit: cover;    
+}
+
+.Cards img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+.Cards p{
+    text-align: center;
+    object-fit: cover;
+}
+
+.Cards h2{
+    text-align: center;
+    object-fit: cover;
+}
+
+.Cards .container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    z-index: 1;
+    object-fit: cover;
+}
+
+.container .card{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    border-radius: 15px;
+    display: flex;
+    object-fit: cover;
+}
+
+
+/* @media only screen and (max-width: 1801px) {
+    .cards-container {
+        flex-wrap: wrap; 
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card .content {
+        padding: 10px; 
+    }
+
+    .Cards{
+        flex-direction: column;
+    }
+
+
+} */
+
+    </style>
+
+
+    <!-- NAVBAR -->
+
+    <nav>
+        <a href="index.html">
+        <img src="./assents/img/whap.png" alt="Whap" class="WhapImg">
+        </a>
+        
+        <div class="navbar_contents">
+            <ul class="navbar_links">
+            <li><a href="">Home</a></li>
+            <li><a href="">Soluções</a></li>
+            <li><a href="">Portifólio</a></li>
+            <li><a href="">Contato</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <!-- HEADER -->
+
+    <header class="header">
+        <div>
+            <img src="assents/img/Fundo.png" alt="" class="fundo">
+        </div>
+        <div class="container">
+            <h1>
+                <span class="hero-title">
+                    Aplicações perfeitas <br>
+                    <span class="hero-subtitle">para <span class="blue"> suas ideias</span></span>
+                </span>
+                <p class="mini-title">Construímos soluções que resolvem seus problemas e facilitam a rotina na sua empresa</p>
+            </h1>
+           
+        </div>
+
+        <div class="btn-container">
+        <div class="btn-C">
+            <a href="#">
+                <p><strong> Comece agora </strong></p>
+            </a>
+        </div>
+        </div>
+
+        <div class="container-s">
+        <img src="assents/img/Sistema.png" alt="Sitema" class="sistema">
+        </div>
+    
+    </header>
+
+
+    <!-- MAIN -->
+
+
+    <main class="main">
+        <div class="container-title">
+        <h1>
+            <span class="title-2"><span class="blue-2">Benefícios</span> de ter uma <br><span class="hero-subtitle-2"> aplicação só sua</span></span>
+        </h1>
+    </div>
+
+
+
+
+    </main>
+
+    <section class="Cards">
+
+        <div class="container">
+            <div class="card">
+                <div class="content">
+                    <img src="assents/img/lapis.svg" alt="lapisB" class="i1">
+                    <img src="assents/img/lapisB.svg" alt="lapisP" class="i2">
+
+                    <h2>Personalização</h2>
+                    <p>Nossas soluções são totalmente personalizáveis de acordo com as necessidades e preferências do cliente</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+        <div class="card">
+            <div class="content">
+                <img src="assents/img/tablet.svg" alt="tabletB" class="i1">
+                <img src="assents/img/tabletB.svg" alt="tabletP" class="i2">
+
+                <h2>Responsividade</h2>
+                <p>Todas as nossa aplicações são otimizadas para serem acessadas em qualquer tipo de dispositivo, independentemente do tamanho da tela</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <div class="content">
+                <img src="assents/img/google.svg" alt="GoogleB" class="i1">
+                <img src="assents/img/googleB.svg" alt="GoogleP" class="i2">
+
+                <h2>Otimização</h2>
+                <p>Realizamos uma análise e aprimoramento da estrutura e conteúdo para que a sua aplicação seja exibida em buscas no Google</p>
+            </div>
+        </div>
+        </div>
+
+    </section>
+   
+
+    <!-- SCRIPT -->
+
+    <script src="scripts/script.js"></script>
+    
+</body>
+</html>
